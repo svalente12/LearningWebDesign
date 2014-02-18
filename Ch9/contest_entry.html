@@ -31,19 +31,18 @@
       to go and you may be one of ten lucky winners.
     </p>
    <form action="http://www.learningwebdesign.com/contest.php" method="post"> 
-    <p>
-      Contest Entry Information
-    </p>
+    <fieldset>
+      <legend>Contest Entry Information</legend>
     
     <ul>
       <li>
-        Name: <input type="text" name="name">
+        <label for="form-name">"Name: <input type="text" name="username" id="form-name">
       </li>
       <li>
-        Email Address: <input type="text" name="email">
+        <label for="form-email">Email Address: <input type="text" name="email" id="form-email">
       </li>
       <li>
-        State: <input type="text" name="phone">
+       <label for="form-state">State: <input type="text" name="phone" id="form-state">
       </li>
       <li>
         My shoes are SO old… 
@@ -51,37 +50,37 @@
         </textarea>
       </li>
     </ul>
-    
+    </fieldset>
     <h2>
       Design your custom Forcefields:
     </h2>
     
-    <p>
-      Custom Shoe Design
-    </p>
+    <fieldset>
+      <legend>Custom Shoe Design</legend>
     
-    <p>
-      Color 
+    
+    <fieldset>
+      <legend>Color 
       <em>
         (choose one)
       </em>
       :
-    </p>
+    </legend>
     <ul>
       <li>
-        <input type="radio" name="color" value="red">Red
+        <label><input type="radio" name="color" value="red">Red</label>
       </li>
       <li>
-        <input type="radio" name="color" value="Blue">Blue
+        <label><input type="radio" name="color" value="Blue">Blue</label>
       </li>
       <li>
-        <input type="radio" name="color" value="Black">Black
+        <label><input type="radio" name="color" value="Black">Black</label>
       </li>
       <li>
-        <input type="radio" name="color" value="Silver">Silver
+        <label><input type="radio" name="color" value="Silver">Silver</label>
       </li>
     </ul>
-    
+    </fieldset>
     <p>
       Features 
       <em>
@@ -90,16 +89,16 @@
     </p>
     <ul>
       <li>
-        <input type="checkbox" name="features[]" value="sparkelylaces">Sparkley laces
+        <label><input type="checkbox" name="features[]" value="sparkelylaces">Sparkley laces</label>
       </li>
       <li>
-        <input type="checkbox" name="features[]" value="metaliclogo">Metallic logo
+        <label><input type="checkbox" name="features[]" value="metaliclogo">Metallic logo</label>
       </li>
       <li>
-        <input type="checkbox" name="features[]" value="lightupheels">Light-up heels
+        <label><input type="checkbox" name="features[]" value="lightupheels">Light-up heels</label>
       </li>
       <li>
-        <input type="checkbox" name="features[]" value="mp3enabled">MP3-enabled
+        <label><input type="checkbox" name="features[]" value="mp3enabled">MP3-enabled</label>
       </li>
     </ul>
     
@@ -107,7 +106,20 @@
       Size
     </p>
     <p>
-      Sizes reflect standard men's sizes:</p>
+      Sizes reflect standard men's sizes:
+      <select name="size" size="1">
+      <option>5</option>
+     <option>6</option>
+     <option>7</option>
+     <option>8</option>
+     <option>9</option>
+     <option>10</option>
+     <option>11</option>
+     <option>12</option>
+     <option>13</option>
+     </select>
+      </p>
+      </fieldset>
       <p>
       <input type="submit" value="Pimp my shoes!">
       <input type="reset">
