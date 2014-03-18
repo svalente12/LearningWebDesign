@@ -162,3 +162,43 @@ p#copyright {
   font-size: .8em;
   text-align: center;
   }
+
+img{
+  max-width: 100% ;
+  }
+
+@media screen and (min-width: 481px) {
+  #products img {
+  float: left;
+  margin: 0 6px p6x 0;
+  }
+#products .more {
+  clear:left;
+  }
+#products {
+  margin: 1em;
+  }
+#testimonials {
+  margin 1em 5%;
+  border-radius: 16px;
+  }
+}
+@media screen and (min-width:780px) {
+  #products {
+  float: left;
+  margin: 0 2% 1em;
+  clear: both;
+  width: 55%;
+  overflow: auto;
+  }
+#testimonials {
+  margin: 1em 2% 1em 64%;
+  }
+p#copyright {
+  clear: both;
+  }
+#content {
+  max-width: 1024px;
+  margin: 0 auto;
+  }
+}
